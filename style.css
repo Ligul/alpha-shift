@@ -1,0 +1,8 @@
+@media only screen and (min-width: 768px) {
+  .btn {
+    max-width: 200px;
+  }
+  ::-webkit-scrollbar {
+    display: none; /* Hide scrollbar UI elements on PCs */
+  }
+}
