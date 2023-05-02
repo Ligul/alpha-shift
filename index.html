@@ -6,6 +6,7 @@
     <title>AlphaShift</title>
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
     <script src="bootstrap.bundle.min.js"></script>
   </head>
   <body>
@@ -115,5 +116,10 @@
         </button>
       </div>
     </footer>
+    <script>
+      if (typeof navigator.serviceWorker !== "undefined") {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
   </body>
 </html>
